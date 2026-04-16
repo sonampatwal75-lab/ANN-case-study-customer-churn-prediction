@@ -1,0 +1,64 @@
+import pandas as pd
+import pickle
+
+from sklearn.model_selection import train_test_split
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.pipeline import Pipeline
+from sklearn.ensemble import RandomForestClassifier
+
+# Load dataset
+df = pd.read_csv("data/customer_churn.csv")
+
+# Target
+y = df["Churn"].map({"Yes": 1, "No": 0})
+X = df.drop(["Churn", "CustomerID"], axis=1)
+
+# Categorical and numeric columns
+categorical_cols = [
+    "Gender",
+    "ContractType",
+    "InternetService",
+    "PaymentMethod"
+]
+
+numeric_cols = [
+    "Age",
+    "TenureMonths",
+    "MonthlyCharges",
+    "TotalCharges",
+    "SupportTickets"
+]
+
+# Preprocessing
+preprocessor = ColumnTransformer(
+    transformers=[
+        ("cat", OneHotEncoder(handle_unknown="ignore"), categorical_cols),
+        ("num", "passthrough", numeric_cols)
+    ]
+)
+
+# Model pipeline
+model = Pipeline(steps=[
+    ("preprocessor", preprocessor),
+    ("classifier", RandomForestClassifier(
+        n_estimators=200,
+        random_state=42
+    ))
+])
+
+# Train-test split
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y,
+    test_size=0.2,
+    random_state=42
+)
+
+# Train model
+model.fit(X_train, y_train)
+
+# Save model as PKL
+with open("churn_model.pkl", "wb") as f:
+    pickle.dump(model, f)
+
+print(" Model saved successfully as churn_model.pkl")
