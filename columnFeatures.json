@@ -1,0 +1,14 @@
+[
+  
+    "CustomerID", 
+    "Gender",
+    "Age",
+    "TenureMonths",
+    "ContractType",
+    "Monthl Charges",
+    "TotalCharges",
+    "InternetService",
+    "SupportTickets",
+    "PaymentMethod",
+    "Churn",
+    ]
