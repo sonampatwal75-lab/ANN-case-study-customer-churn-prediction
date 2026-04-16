@@ -94,14 +94,11 @@ This model can help organizations:
   ▶️ How to Run the Project
 
  1️⃣ Clone the repository
-
- 
-git clone https://github.com/your-username/customer-churn-ann.git
 cd customer-churn-ann
  
+
  2️⃣ Install dependencies
 
- 
 pip install -r requirements.txt
 
  3️⃣ Run the model
