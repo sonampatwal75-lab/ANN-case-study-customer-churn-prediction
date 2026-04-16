@@ -1,0 +1,21 @@
+CustomerID,Gender,Age,TenureMonths,ContractType,MonthlyCharges,TotalCharges,InternetService,SupportTickets,PaymentMethod,Churn
+C001,Male,29,12,Monthly,70.5,846,Fiber,3,Electronic check,Yes
+C002,Female,45,24,Yearly,55.0,1320,DSL,1,Credit card,No
+C003,Male,34,5,Monthly,80.2,401,Fiber,4,Electronic check,Yes
+C004,Female,52,48,Yearly,60.0,2880,None,0,Bank transfer,No
+C005,Male,23,2,Monthly,90.1,180,Fiber,5,Electronic check,Yes
+C006,Female,39,36,Yearly,65.5,2358,DSL,1,Credit card,No
+C007,Male,41,18,Monthly,75.0,1350,Fiber,2,Electronic check,Yes
+C008,Female,30,10,Monthly,68.3,683,DSL,3,Credit card,No
+C009,Male,27,6,Monthly,85.0,510,Fiber,4,Electronic check,Yes
+C010,Female,50,60,Yearly,50.0,3000,None,0,Bank transfer,No
+C011,Male,33,14,Monthly,72.0,1008,DSL,2,Credit card,No
+C012,Female,28,3,Monthly,88.5,265,Fiber,5,Electronic check,Yes
+C013,Male,47,40,Yearly,62.0,2480,DSL,1,Credit card,No
+C014,Female,36,8,Monthly,78.0,624,Fiber,3,Electronic check,Yes
+C015,Male,55,72,Yearly,48.0,3456,None,0,Bank transfer,No
+C016,Female,31,11,Monthly,69.0,759,DSL,2,Credit card,No
+C017,Male,26,4,Monthly,92.0,368,Fiber,6,Electronic check,Yes
+C018,Female,44,30,Yearly,58.0,1740,DSL,1,Credit card,No
+C019,Male,38,9,Monthly,81.5,733,Fiber,4,Electronic check,Yes
+C020,Female,29,20,Yearly,63.5,1270,DSL,1,Credit card,No
