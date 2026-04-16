@@ -73,7 +73,7 @@ The dataset contains customer-related information such as:
 * Month-to-month contracts have higher churn rates
 
  
- 💼 Business Impact
+ 💼 Business Impact 
 
 This model can help organizations:
 
